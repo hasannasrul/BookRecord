@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(images/book.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+    <title>project recocrder</title>
+</head>
+
+<body>
+    <!-- navbar -->
+
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src=https://images.unsplash.com/photo-1514726779584-32b09eb7cad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=906&q=80"
+                width="30" height="30" class="d-inline-block align-top" alt="">
+            BOOK KEEPER
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <!-- form -->
+
+
+    <div class="container mt-5 float-center">
+        <form class=" .d-flex" id="submit">
+            <div class="form-group">
+                <input type="text" class="form-control" id="bookname" aria-describedby="emailHelp"
+                    placeholder="Enter Bookname">
+
+                <br><br>
+
+                <input type="text" class="form-control" id="author" aria-describedby="emailHelp"
+                    placeholder="Enter Author">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Year</label>
+                <input type="number" class="form-control" id="year" placeholder="Edition">
+            </div>
+
+            <button type="submit" class="btn btn-warning btn-block mt-4">Submit</button>
+        </form>
+
+        <!-- table -->
+
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr class="text-info">
+                    <th scope="col">BOOK NAME</th>
+                    <th scope="col">AUTHOR</th>
+                    <th scope="col">YEAR</th>
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody id="booklist">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="one.js"></script>
+
+</body>
+
+</html>
